@@ -24,7 +24,7 @@ jobs:
       - name: yarn install, build, and test
         run: |
           yarn
-          yarn run build --if-present
+          yarn run build
           yarn run test --if-present
 
       - name: Zip all files for upload between jobs
