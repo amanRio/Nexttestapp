@@ -53,7 +53,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'sampleapp'
+          app-name: 'nextjstestapp1'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5FD053DC28FE48AD9E1D3F3F39C66003 }}
           package: next.zip
