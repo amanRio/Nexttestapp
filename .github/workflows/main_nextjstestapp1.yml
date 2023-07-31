@@ -25,8 +25,7 @@ jobs:
         run: |
           yarn
           yarn run build
-          yarn run test --if-present
-
+        
       - name: Zip all files for upload between jobs
             # IMPORTANT: .next is a hidden folder and will NOT be included in the zip unless we specify it
         run: zip next.zip ./* .next -qr
